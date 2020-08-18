@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access API</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<h2>Access API</h2>
+	<div id="items">
+		
+	</div>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$.get('http://localhost:8000/api/items').done(function(res){
+				console.log(res);
+			})
+		})
+	</script>
+</body>
+</html>
